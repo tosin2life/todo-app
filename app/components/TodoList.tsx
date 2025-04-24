@@ -111,27 +111,26 @@ export default function TodoList() {
 
           <div className="space-y-4">
             <form onSubmit={addTodo}>
-              <div className="todo-container p-3 sm:p-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
-                <div className="flex items-center gap-3 sm:gap-4">
-                  <div className="checkbox-container">
-                    <div className="w-5 h-5 sm:w-6 sm:h-6 border-2 border-gray-200 dark:border-gray-600 rounded-full" />
+              <div className="todo-container p-3 sm:p-4">
+                <div className="flex items-center gap-2">              
+                  <div className="flex-1 flex items-center gap-2">
+                    <input
+                      type="text"
+                      value={newTodo}
+                      onChange={(e) => setNewTodo(e.target.value)}
+                      placeholder="Create a new todo..."
+                      className="flex-1 p-2 sm:p-1 todo-input focus:outline-none placeholder-gray-400 dark:placeholder-gray-500 text-sm sm:text-base"
+                    />
+                    <button
+                      type="submit"
+                      disabled={!newTodo.trim()}
+                      className="px-3 py-1.5 sm:px-4 sm:py-2 bg-gradient-to-br from-blue-400 to-purple-500 text-white rounded-lg 
+                        transition-opacity disabled:opacity-50 hover:opacity-90 text-sm sm:text-base whitespace-nowrap"
+                    >
+                      Add
+                    </button>
                   </div>
-                  <input
-                    type="text"
-                    value={newTodo}
-                    onChange={(e) => setNewTodo(e.target.value)}
-                    placeholder="Create a new todo..."
-                    className="flex-1 p-2 sm:p-1 todo-input focus:outline-none placeholder-gray-400 dark:placeholder-gray-500 text-sm sm:text-base"
-                  />
                 </div>
-                <button
-                  type="submit"
-                  disabled={!newTodo.trim()}
-                  className="w-full sm:w-auto px-4 py-2 bg-gradient-to-br from-blue-400 to-purple-500 text-white rounded-lg 
-                    transition-opacity disabled:opacity-50 hover:opacity-90 text-sm sm:text-base"
-                >
-                  Add Todo
-                </button>
               </div>
             </form>
 
