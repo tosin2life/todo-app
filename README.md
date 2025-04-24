@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Modern Todo App
+
+A sleek and responsive Todo application built with Next.js, featuring dark mode, local storage persistence, and a modern UI design.
+
+## Features
+
+- ✨ Modern, clean user interface
+- 🌓 Dark/Light mode toggle with persistence
+- 💾 Local storage persistence for todos
+- 📱 Fully responsive design
+- ⏰ Creation date and time tracking for todos
+- 🔍 Filter todos (All, Active, Completed)
+- ✏️ Edit existing todos
+- 🗑️ Delete todos and clear completed
+- ✅ Checkbox completion tracking
+
+## Tech Stack
+
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- Heroicons
+- Local Storage API
 
 ## Getting Started
 
-First, run the development server:
-
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/tosin2life/todo-app.git
+cd todo-app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+## Usage
 
-To learn more about Next.js, take a look at the following resources:
+- Add a new todo by typing in the input field and clicking "Add Todo"
+- Toggle todo completion by clicking the checkbox
+- Edit todos using the menu (⋯) button
+- Delete individual todos using the menu button
+- Filter todos using the filter buttons (All, Active, Completed)
+- Clear all completed todos using the "Clear Completed" button
+- Toggle dark/light mode using the sun/moon icon
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Live Demo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Check out the live demo at: [Todo App on Vercel](https://todo-app-tosin2life.vercel.app/)
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Feel free to submit issues and pull requests to improve the application.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
